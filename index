@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover</title>
+    <link rel="stylesheet" href="/practice-grid.css">
+</head>
+<body>
+
+<header class="nav">
+
+    <div class="left">
+        <a href="#">Explore</a>
+        <a href="#">Hire</a>
+        <a href="#">Jobs</a>
+        <a href="#">Blog</a>
+    </div>
+
+    <div class="logo">
+        Dribbble
+    </div>
+
+    <div class="right">
+        <button class="login">Login</button>
+        <button class="join">Sign Up</button>
+    </div>
+
+</header>
+
+<section class="hero">
+
+    <h1>
+        Discover the world's<br>
+        top designers
+    </h1>
+
+    <p>
+        Explore work from the most talented and accomplished
+        designers ready to take on your next project.
+    </p>
+
+    <div class="search">
+
+        <input type="text" placeholder="What are you looking for?">
+
+        <div class="drop">
+            Shots ▼
+        </div>
+
+        <button class="go">
+            🔍
+        </button>
+
+    </div>
+
+    <div class="tags">
+        <span>landing page</span>
+        <span>dashboard</span>
+        <span>mobile app</span>
+        <span>branding</span>
+        <span>illustration</span>
+        <span>logo</span>
+    </div>
+
+</section>
+
+<section class="menu">
+
+    <button class="sort">
+        Popular ▼
+    </button>
+
+    <ul>
+        <li>Discover</li>
+        <li>Animation</li>
+        <li>Branding</li>
+        <li>Illustration</li>
+        <li>Mobile</li>
+        <li>Print</li>
+        <li>Typography</li>
+        <li>Web Design</li>
+    </ul>
+
+    <button class="filter">
+        Filters
+    </button>
+
+</section>
+
+<section class="grid">
+
+    <div class="card">
+        <div class="overlay">
+            <h4>Modern Dashboard</h4>
+        </div>
+    </div>
+
+    <div class="card tall">
+        <div class="overlay">
+            <h4>Creative Mobile UI</h4>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="overlay">
+            <h4>Portfolio Design</h4>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="overlay">
+            <h4>Ecommerce Layout</h4>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="overlay">
+            <h4>Finance App</h4>
+        </div>
+    </div>
+
+    <div class="card tall">
+        <div class="overlay">
+            <h4>Agency Website</h4>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="overlay">
+            <h4>Product Card</h4>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="overlay">
+            <h4>Landing Page</h4>
+        </div>
+    </div>
+
+</section>
+
+<section class="brands">
+
+    <div class="track">
+
+        <div class="item">Adobe</div>
+        <div class="item">Figma</div>
+        <div class="item">Spotify</div>
+        <div class="item">Dropbox</div>
+        <div class="item">Airbnb</div>
+        <div class="item">Slack</div>
+
+        <div class="item">Adobe</div>
+        <div class="item">Figma</div>
+        <div class="item">Spotify</div>
+        <div class="item">Dropbox</div>
+        <div class="item">Airbnb</div>
+        <div class="item">Slack</div>
+
+    </div>
+
+</section>
+
+<section class="cta">
+
+    <h2>
+        Find your next designer today
+    </h2>
+
+    <p>
+        The world's leading brands use Dribbble to hire
+        creative talent and build amazing products.
+    </p>
+
+    <div class="btns">
+        <button class="hire">
+            Get Started
+        </button>
+
+        <button class="talk">
+            Learn More
+        </button>
+    </div>
+
+</section>
+
+<footer class="foot">
+
+    <div class="col">
+        <h3>Dribbble</h3>
+        <p>Design inspiration from the world's best creatives.</p>
+    </div>
+
+    <div class="col">
+        <a href="#">For Designers</a>
+        <a href="#">Hire Talent</a>
+        <a href="#">Advertising</a>
+        <a href="#">Blog</a>
+    </div>
+
+    <div class="col">
+        <a href="#">Careers</a>
+        <a href="#">Support</a>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+    </div>
+
+</footer>
+
+<div class="copy">
+
+    <p>© 2026 Dribbble Clone</p>
+
+    <div class="links">
+        <a href="#">Jobs</a>
+        <a href="#">Designers</a>
+        <a href="#">Tags</a>
+        <a href="#">Places</a>
+    </div>
+
+</div>
+
+</body>
+</html>
