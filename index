@@ -3,223 +3,426 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discover</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Dribbble - Discover the World's Top Designers & Creatives</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
 </head>
 <body>
 
-<header class="nav">
+    <header class="header">
+        <div class="left">
+            <a href="#" class="logo">dribbble<span>.</span></a>
+            <nav class="menu">
+                <a href="#">Find designers</a>
+                <a href="#">Inspiration</a>
+                <a href="#">Courses</a>
+                <a href="#">Jobs</a>
+                <a href="#">Go Pro</a>
+            </nav>
+        </div>
+        <div class="right">
+            <a href="#" class="login">Log in</a>
+            <a href="#" class="btn">Sign up</a>
+        </div>
+    </header>
 
-    <div class="left">
-        <a href="#">Explore</a>
-        <a href="#">Hire</a>
-        <a href="#">Jobs</a>
-        <a href="#">Blog</a>
-    </div>
-
-    <div class="logo">
-        Dribbble
-    </div>
-
-    <div class="right">
-        <button class="login">Login</button>
-        <button class="join">Sign Up</button>
-    </div>
-
-</header>
-
-<section class="hero">
-
-    <h1>
-        Discover the world's<br>
-        top designers
-    </h1>
-
-    <p>
-        Explore work from the most talented and accomplished
-        designers ready to take on your next project.
-    </p>
-
-    <div class="search">
-
-        <input type="text" placeholder="What are you looking for?">
-
-        <div class="drop">
-            Shots ▼
+    <section class="hero">
+        <h1 class="headline">Discover the world's <br>top designers</h1>
+        <p class="sub">Explore work from the most talented and accomplished designers ready to take on your next project</p>
+        
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" class="input" placeholder="What are you looking for?">
+            <div class="filter">
+                Shots
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <button class="action">
+                <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+            </button>
         </div>
 
-        <button class="go">
-            🔍
-        </button>
+        <div class="trends">
+            <span>Trending searches</span>
+            <a href="#" class="tag">landing page</a>
+            <a href="#" class="tag">e-commerce</a>
+            <a href="#" class="tag">mobile app</a>
+            <a href="#" class="tag">logo design</a>
+            <a href="#" class="tag">dashboard</a>
+            <a href="#" class="tag">icons</a>
+        </div>
+    </section>
 
-    </div>
-
-    <div class="tags">
-        <span>landing page</span>
-        <span>dashboard</span>
-        <span>mobile app</span>
-        <span>branding</span>
-        <span>illustration</span>
-        <span>logo</span>
-    </div>
-
-</section>
-
-<section class="menu">
-
-    <button class="sort">
-        Popular ▼
-    </button>
-
-    <ul>
-        <li>Discover</li>
-        <li>Animation</li>
-        <li>Branding</li>
-        <li>Illustration</li>
-        <li>Mobile</li>
-        <li>Print</li>
-        <li>Typography</li>
-        <li>Web Design</li>
-    </ul>
-
-    <button class="filter">
-        Filters
-    </button>
-
-</section>
-
-<section class="grid">
-
-    <div class="card">
-        <div class="overlay">
-            <h4>Modern Dashboard</h4>
+    <div class="bar">
+        <div class="scroller">
+            <a href="#" class="pill active">Discover</a>
+            <a href="#" class="pill">Animation</a>
+            <a href="#" class="pill">Branding</a>
+            <a href="#" class="pill">Illustration</a>
+            <a href="#" class="pill">Mobile</a>
+            <a href="#" class="pill">Print</a>
+            <a href="#" class="pill">Product Design</a>
+            <a href="#" class="pill">Typography</a>
+            <a href="#" class="pill">Web Design</a>
         </div>
     </div>
 
-    <div class="card tall">
-        <div class="overlay">
-            <h4>Creative Mobile UI</h4>
+    <main class="grid">
+     
+        <div class="card">
+            <div class="preview">
+                <img src="https://images.unsplash.com/photo-1616469829581-73993eb86b02?w=800" alt="Finances mockup">
+                <div class="overlay">
+                    <span class="caption">Empower Your Finances!</span>
+                    <div class="actions">
+                        <div class="button"><i class="fa-solid fa-bookmark"></i></div>
+                        <div class="button"><i class="fa-solid fa-heart"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="creator">
+                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100" class="avatar" alt="Bato">
+                    <a href="#" class="name">Bato</a>
+                    <span class="badge team">Team</span>
+                </div>
+                <div class="metrics">
+                    <div class="metric"><i class="fa-solid fa-heart"></i> 31</div>
+                    <div class="metric"><i class="fa-solid fa-eye"></i> 6.6k</div>
+                </div>
+            </div>
+        </div>
+
+    
+        <div class="card">
+            <div class="preview">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800" alt="Nickel finance layout">
+                <div class="overlay">
+                    <span class="caption">Make Every Nickel Count</span>
+                    <div class="actions">
+                        <div class="button"><i class="fa-solid fa-bookmark"></i></div>
+                        <div class="button"><i class="fa-solid fa-heart"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="creator">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100" class="avatar" alt="Jovel">
+                    <a href="#" class="name">Jovel Ahmed</a>
+                    <span class="badge">Pro</span>
+                </div>
+                <div class="metrics">
+                    <div class="metric"><i class="fa-solid fa-heart"></i> 31</div>
+                    <div class="metric"><i class="fa-solid fa-eye"></i> 6.6k</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="preview">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800" alt="Crypto screen mockup">
+                <div class="overlay">
+                    <span class="caption">Leverage Crypto trading...</span>
+                    <div class="actions">
+                        <div class="button"><i class="fa-solid fa-bookmark"></i></div>
+                        <div class="button"><i class="fa-solid fa-heart"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="creator">
+                    <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=100" class="avatar" alt="Estat">
+                    <a href="#" class="name">Estat UI/UX</a>
+                </div>
+                <div class="metrics">
+                    <div class="metric"><i class="fa-solid fa-heart"></i> 31</div>
+                    <div class="metric"><i class="fa-solid fa-eye"></i> 6.6k</div>
+                </div>
+            </div>
+        </div>
+
+   
+        <div class="card">
+            <div class="preview">
+                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800" alt="Plexo dashboard">
+                <div class="overlay">
+                    <span class="caption">PLEXO CRYPTO PAYMENTS</span>
+                    <div class="actions">
+                        <div class="button"><i class="fa-solid fa-bookmark"></i></div>
+                        <div class="button"><i class="fa-solid fa-heart"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="creator">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100" class="avatar" alt="Levi">
+                    <a href="#" class="name">Levi Lovell</a>
+                    <span class="badge">Pro</span>
+                </div>
+                <div class="metrics">
+                    <div class="metric"><i class="fa-solid fa-heart"></i> 31</div>
+                    <div class="metric"><i class="fa-solid fa-eye"></i> 6.6k</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="preview">
+                <img src="https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?w=800" alt="Business budget UI">
+                <div class="overlay">
+                    <span class="caption">Manage your business budget</span>
+                    <div class="actions">
+                        <div class="button"><i class="fa-solid fa-bookmark"></i></div>
+                        <div class="button"><i class="fa-solid fa-heart"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="creator">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100" class="avatar" alt="Bato">
+                    <a href="#" class="name">Bato</a>
+                    <span class="badge team">Team</span>
+                </div>
+                <div class="metrics">
+                    <div class="metric"><i class="fa-solid fa-heart"></i> 31</div>
+                    <div class="metric"><i class="fa-solid fa-eye"></i> 6.6k</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="preview">
+                <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=800" alt="SaaS platform UI">
+                <div class="overlay">
+                    <span class="caption">Agency business portal</span>
+                    <div class="actions">
+                        <div class="button"><i class="fa-solid fa-bookmark"></i></div>
+                        <div class="button"><i class="fa-solid fa-heart"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="creator">
+                    <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=100" class="avatar" alt="Jovel">
+                    <a href="#" class="name">Jovel Ahmed</a>
+                    <span class="badge">Pro</span>
+                </div>
+                <div class="metrics">
+                    <div class="metric"><i class="fa-solid fa-heart"></i> 31</div>
+                    <div class="metric"><i class="fa-solid fa-eye"></i> 6.6k</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="preview">
+                <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=800" alt="Floncek branding">
+                <div class="overlay">
+                    <span class="caption">Floncek Identity</span>
+                    <div class="actions">
+                        <div class="button"><i class="fa-solid fa-bookmark"></i></div>
+                        <div class="button"><i class="fa-solid fa-heart"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="creator">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100" class="avatar" alt="Tune">
+                    <a href="#" class="name">TuneOfWater</a>
+                </div>
+                <div class="metrics">
+                    <div class="metric"><i class="fa-solid fa-heart"></i> 31</div>
+                    <div class="metric"><i class="fa-solid fa-eye"></i> 6.6k</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="preview">
+                <img src="https://images.unsplash.com/photo-1618005198143-d5182384-a83a8bd57fbe?w=800" alt="Doverange Logo">
+                <div class="overlay">
+                    <span class="caption">Doverange.</span>
+                    <div class="actions">
+                        <div class="button"><i class="fa-solid fa-bookmark"></i></div>
+                        <div class="button"><i class="fa-solid fa-heart"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="creator">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100" class="avatar" alt="Tune">
+                    <a href="#" class="name">TuneOfWater</a>
+                </div>
+                <div class="metrics">
+                    <div class="metric"><i class="fa-solid fa-heart"></i> 31</div>
+                    <div class="metric"><i class="fa-solid fa-eye"></i> 6.6k</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="preview">
+                <img src="https://images.unsplash.com/photo-1561070791-26c113006238?w=800" alt="Rapid Rabbit Logo">
+                <div class="overlay">
+                    <span class="caption">Rapid Rabbit Logo</span>
+                    <div class="actions">
+                        <div class="button"><i class="fa-solid fa-bookmark"></i></div>
+                        <div class="button"><i class="fa-solid fa-heart"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="creator">
+                    <img src="" class="avatar" alt="Levi">
+                    <a href="#" class="name">Levi Lovell</a>
+                    <span class="badge">Pro</span>
+                </div>
+                <div class="metrics">
+                    <div class="metric"><i class="fa-solid fa-heart"></i> 31</div>
+                    <div class="metric"><i class="fa-solid fa-eye"></i> 6.6k</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="preview">
+                <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=800" alt="Ulysses poster design">
+                <div class="overlay">
+                    <span class="caption">Free Sample Pack</span>
+                    <div class="actions">
+                        <div class="button"><i class="fa-solid fa-bookmark"></i></div>
+                        <div class="button"><i class="fa-solid fa-heart"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="creator">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100" class="avatar" alt="Ulysses">
+                    <a href="#" class="name">Ulysses Design Co.</a>
+                </div>
+                <div class="metrics">
+                    <div class="metric"><i class="fa-solid fa-heart"></i> 31</div>
+                    <div class="metric"><i class="fa-solid fa-eye"></i> 6.6k</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="slider">
+        <div class="track">
+            
+            <div class="brand">
+                <svg width="36" height="36" viewBox="-1.5 0 20 20" fill="currentColor" style="color: #dbdbde;">
+                    <g fill="currentColor">
+                        <path d="M57.5708873,7282.19296 C58.2999598,7281.34797 58.7914012,7280.17098 58.6569121,7279 C57.6062792,7279.04 56.3352055,7279.67099 55.5818643,7280.51498 C54.905374,7281.26397 54.3148354,7282.46095 54.4735932,7283.60894 C55.6455696,7283.69593 56.8418148,7283.03894 57.5708873,7282.19296 M60.1989864,7289.62485 C60.2283111,7292.65181 62.9696641,7293.65879 63,7293.67179 C62.9777537,7293.74279 62.562152,7295.10677 61.5560117,7296.51675 C60.6853718,7297.73474 59.7823735,7298.94772 58.3596204,7298.97372 C56.9621472,7298.99872 56.5121648,7298.17973 54.9134635,7298.17973 C53.3157735,7298.17973 52.8162425,7298.94772 51.4935978,7298.99872 C50.1203933,7299.04772 49.0738052,7297.68074 48.197098,7296.46676 C46.4032359,7293.98379 45.0330649,7289.44985 46.8734421,7286.3899 C47.7875635,7284.87092 49.4206455,7283.90793 51.1942837,7283.88393 C52.5422083,7283.85893 53.8153044,7284.75292 54.6394294,7284.75292 C55.4635543,7284.75292 57.0106846,7283.67793 58.6366882,7283.83593 C59.3172232,7283.86293 61.2283842,7284.09893 62.4549652,7285.8199 C62.355868,7285.8789 60.1747177,7287.09489 60.1989864,7289.62485" transform="translate(-56.000000, -7279.000000)"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="brand">
+                <svg width="36" height="36" viewBox="0 0 16 16" fill="currentColor" style="color: #dbdbde;">
+                    <path fill="currentColor" d="M1 1h6.5v6.5H1V1z"></path>
+                    <path fill="currentColor" d="M8.5 1H15v6.5H8.5V1z"></path>
+                    <path fill="currentColor" d="M1 8.5h6.5V15H1V8.5z"></path>
+                    <path fill="currentColor" d="M8.5 8.5H15V15H8.5V8.5z"></path>
+                </svg>
+            </div>
+            <div class="brand">
+                <svg width="36" height="36" viewBox="0 0 32 32" fill="currentColor" style="color: #dbdbde;">
+                    <path d="M30.996 2.724h-11.102l11.102 26.552zM12.106 2.724h-11.102v26.552zM18.457 29.276l-2.112-5.35h-5.191l4.864-11.427 7.075 16.776z"></path>
+                </svg>
+            </div>
+            <div class="brand">
+                <svg width="36" height="36" viewBox="0 0 32 32" fill="currentColor" style="color: #dbdbde;">
+                    <path d="M12.932 20.459v-8.917l7.839 4.459zM30.368 8.735c-0.354-1.301-1.354-2.307-2.625-2.663l-0.027-0.006c-3.193-0.406-6.886-0.638-10.634-0.638-0.381 0-0.761 0.002-1.14 0.007l0.058-0.001c-0.322-0.004-0.701-0.007-1.082-0.007-3.748 0-7.443 0.232-11.070 0.681l0.434-0.044c-1.297 0.363-2.297 1.368-2.644 2.643l-0.006 0.026c-0.4 2.109-0.628 4.536-0.628 7.016 0 0.088 0 0.176 0.001 0.263l-0-0.014c-0 0.074-0.001 0.162-0.001 0.25 0 2.48 0.229 4.906 0.666 7.259l-0.038-0.244c0.354 1.301 1.354 2.307 2.625 2.663l0.027 0.006c3.193 0.406 6.886 0.638 10.634 0.638 0.38 0 0.76-0.002 1.14-0.007l-0.058 0.001c0.322 0.004 0.702 0.007 1.082 0.007 3.749 0 7.443-0.232 11.070-0.681l-0.434 0.044c1.298-0.362 2.298-1.368 2.646-2.643l0.006-0.026c0.399-2.109 0.627-4.536 0.627-7.015 0-0.088-0-0.176-0.001-0.263l0 0.013c0-0.074 0.001-0.162 0.001-0.25 0-2.48-0.229-4.906-0.666-7.259l0.038 0.244z"></path>
+                </svg>
+            </div>
+            <div class="brand">
+                <svg width="36" height="36" viewBox="0 0 32 32" fill="currentColor" style="color: #dbdbde;">
+                    <path d="M20.386 16.8c0.011-0 0.023-0 0.035-0 0.231 0 0.456 0.026 0.672 0.077l-0.020-0.004-0.016 0.147c-0.068 0.581-0.495 1.046-1.051 1.17l-0.009 0.002c-0.038 0.008-0.082 0.013-0.127 0.013-0.306 0-0.562-0.211-0.632-0.495l-0.001-0.004c-0.004-0.027-0.006-0.059-0.006-0.091 0-0.16 0.056-0.307 0.15-0.423l-0.001 0.001c0.184-0.214 0.448-0.354 0.745-0.375l0.003-0c0.076-0.010 0.166-0.017 0.256-0.017h0.001zM28.754 15.478c0.317 0 0.509 0.285 0.509 0.876 0 0.858-0.345 1.563-0.781 1.563-0.327 0-0.519-0.295-0.519-0.877 0-0.867 0.355-1.562 0.791-1.562zM7.974 15.478c0.319 0 0.51 0.285 0.51 0.876 0 0.858-0.345 1.563-0.782 1.563-0.326 0-0.517-0.295-0.517-0.877 0-0.867 0.354-1.562 0.79-1.562zM1.74 14.319c-0.062 0.487-0.127 0.972-0.219 1.412 0.41-0.010 0.774-0.020 1.763-0.020l-2.262 2.449-0.019 0.878c0.555-0.037 1.246-0.049 2.037-0.049 0.707 0 1.417 0.010 1.871 0.049 0.081-0.572 0.162-0.953 0.262-1.421-0.344 0.019-0.943 0.029-1.889 0.029l2.262-2.461 0.029-0.867c-0.546 0.029-1.037 0.037-1.899 0.037-0.936 0-1.218-0.009-1.936-0.037zM8.146 14.206c-1.454 0.078-2.603 1.276-2.603 2.743 0 0.052 0.001 0.103 0.004 0.154l-0-0.007c-0.006 0.055-0.009 0.118-0.009 0.182 0 1.054 0.854 1.908 1.908 1.908 0.039 0 0.077-0.001 0.115-0.003l-0.005 0c1.454-0.075 2.604-1.273 2.604-2.738 0-0.056-0.002-0.112-0.005-0.167l0 0.008c0.006-0.056 0.009-0.12 0.009-0.186 0-1.047-0.849-1.896-1.896-1.896-0.043 0-0.085 0.001-0.127 0.004l0.006-0zM14.244 14.196c-0.875 0.145-1.584 0.736-1.894 1.528l-0.006 0.017c0.059-0.288 0.093-0.618 0.093-0.957 0-0.19-0.011-0.378-0.032-0.563l0.002 0.023c-0.475 0.084-1.030 0.139-1.595 0.152l-0.013 0c0.003 0.081 0.004 0.177 0.004 0.273 0 0.452-0.035 0.895-0.102 1.328l0.006-0.048-0.209 1.431c-0.082 0.562-0.172 1.211-0.264 1.621h1.691c0.009-0.249 0.072-0.639 0.117-0.982l0.145-0.982c0.119-0.639 0.627-1.392 1.018-1.392 0.227 0 0.219 0.22 0.155 0.63l-0.164 1.106c-0.082 0.562-0.172 1.211-0.264 1.621h1.708c0.010-0.249 0.064-0.64 0.11-0.982l0.145-0.982c0.117-0.64 0.627-1.392 1.017-1.392 0.227 0 0.219 0.21 0.182 0.495l-0.409 2.862h1.56l0.547-3.26c0.119-0.811 0.055-1.545-0.845-1.545-0.85 0.137-1.542 0.701-1.856 1.461l-0.006 0.016c0.109-0.762 0.045-1.477-0.846-1.477zM28.961 14.144c-1.473 0.079-2.637 1.292-2.637 2.777 0 0.053 0.001 0.105 0.004 0.157l-0-0.007c-0.006 0.056-0.009 0.121-0.009 0.186 0 1.067 0.865 1.933 1.933 1.933 0.039 0 0.078-0.001 0.116-0.003l-0.005 0c1.473-0.077 2.638-1.29 2.638-2.775 0-0.057-0.002-0.113-0.005-0.169l0 0.008c0.006-0.056 0.009-0.122 0.009-0.188 0-1.061-0.86-1.921-1.921-1.921-0.043 0-0.086 0.001-0.128 0.004l0.006-0zM20.794 14.066c-0.162 0.003-0.318 0.015-0.472 0.035l0.021-0.002c-0.628 0.072-1.197 0.264-1.706 0.551l0.022-0.012 0.325 0.986c0.353-0.2 0.765-0.344 1.204-0.405l0.018-0.002c0.672-0.082 0.946 0.125 0.987 0.469 0.005 0.046 0.008 0.1 0.008 0.155 0 0.073-0.005 0.144-0.015 0.214l0.001-0.008-0.017 0.070c-0.248-0.051-0.533-0.080-0.826-0.080-0.192 0-0.382 0.013-0.567 0.037l0.022-0.002c-0.602 0.046-1.131 0.326-1.502 0.747l-0.002 0.002c-0.196 0.268-0.313 0.605-0.313 0.969 0 0.114 0.012 0.226 0.034 0.334l-0.002-0.011c0.101 0.568 0.59 0.993 1.179 0.993 0.113 0 0.223-0.016 0.327-0.045l-0.008 0.002c0.557-0.061 1.035-0.355 1.341-0.782l0.004-0.006c-0.006 0.14-0.019 0.271-0.040 0.399l0.003-0.019c-0.022 0.138-0.054 0.26-0.095 0.378l0.005-0.015 1.555 0.001q-0.012-0.228-0.001-0.456 0.068-0.86 0.309-2.563c0.014-0.108 0.022-0.232 0.022-0.359 0-0.134-0.009-0.265-0.026-0.394l0.002 0.015c-0.1-0.805-0.785-1.211-1.794-1.197zM25.516 12.813l-1.572 0.591-0.209 0.887-0.557 0.026-0.144 1.222h0.51l-0.264 1.887c-0.164 1.173 0.045 1.726 1.081 1.726 0.521-0.009 1.008-0.145 1.434-0.379l-0.016 0.008 0.181-1.125c-0.224 0.122-0.485 0.207-0.763 0.237l-0.009 0.001c-0.309 0-0.345-0.162-0.281-0.61l0.236-1.745h1.053c0.038-0.257 0.164-1.096 0.2-1.25h-1.081z"></path>
+                </svg>
+            </div>
+            <div class="brand">
+                <svg width="36" height="36" viewBox="0 0 32 32" fill="currentColor" style="color: #dbdbde;">
+                    <path d="M19.283 17.4c-0.367 0.374-0.879 0.606-1.444 0.606-1.117 0-2.023-0.906-2.023-2.023s0.906-2.023 2.023-2.023c0.929 0 1.712 0.626 1.949 1.479l0.003 0.014c0.045 0.159 0.071 0.341 0.071 0.53 0 0.552-0.221 1.052-0.579 1.417l0-0zM15.471 13.586c-0.648 0.615-1.052 1.483-1.052 2.446 0 1.861 1.509 3.37 3.37 3.37s3.37-1.509 3.37-3.37c0-1.54-1.033-2.838-2.444-3.241l-0.024-0.006c-0.27-0.078-0.581-0.123-0.902-0.123-0.899 0-1.716 0.352-2.32 0.925l0.002-0.001zM28.296 12.601c-0.802 0.001-1.522 0.352-2.016 0.909l-0.002 0.003c-0.496-0.562-1.219-0.915-2.023-0.915-0.563 0-1.086 0.173-1.519 0.468l0.009-0.006c-0.316-0.278-0.73-0.451-1.184-0.462l-0.002-0v6.742l0.337-0.016c0.544-0.014 0.981-0.451 0.995-0.993l0-0.001 0.016-0.337v-2.361l0.017-0.337c0-0.001 0-0.002 0-0.003 0-0.245 0.061-0.477 0.169-0.679l-0.004 0.008c0.238-0.405 0.671-0.672 1.166-0.672s0.928 0.267 1.162 0.664l0.003 0.006c0.103 0.196 0.164 0.428 0.165 0.675v0l0.017 0.339v2.361l0.016 0.336c0.022 0.54 0.454 0.972 0.991 0.995l0.002 0 0.337 0.016v-3.708l0.015-0.337c0-0.001 0-0.002 0-0.003 0-0.247 0.062-0.48 0.171-0.683l-0.004 0.008c0.238-0.403 0.67-0.669 1.165-0.669 0.496 0 0.929 0.268 1.164 0.666l0.003 0.006c0.102 0.195 0.162 0.427 0.162 0.673 0 0.001 0 0.001 0 0.002v-0l0.019 0.337v2.361l0.016 0.336c0.020 0.541 0.454 0.975 0.993 0.995l0.002 0 0.337 0.016v-4.045c-0.001-1.488-1.208-2.694-2.697-2.694-0.001 0-0.002 0-0.003 0h0zM12.206 17.4c-0.37 0.393-0.894 0.638-1.475 0.638-1.117 0-2.023-0.906-2.023-2.023s0.906-2.023 2.023-2.023c0.924 0 1.703 0.619 1.945 1.465l0.004 0.014c0.047 0.163 0.075 0.351 0.075 0.544 0 0.536-0.209 1.024-0.549 1.386l0.001-0.001zM10.78 12.6h-0.005c-1.86 0.001-3.367 1.509-3.367 3.368s1.508 3.368 3.368 3.368 3.368-1.508 3.368-3.368c0-1.86-1.507-3.367-3.366-3.368h-0zM6.734 18.008l-0.337-0.015h-3.035l4.044-4.045-0.016-0.337c-0.013-0.544-0.451-0.982-0.994-0.995l-0.001-0-0.337-0.016h-5.052l0.018 0.337c0.026 0.538 0.455 0.967 0.99 0.995l0.002 0 0.337 0.016h3.037l-4.049 4.045 0.017 0.336c0.019 0.541 0.453 0.975 0.992 0.995l0.002 0 0.337 0.016h5.056l-0.018-0.337c-0.024-0.539-0.455-0.969-0.991-0.993l-0.002-0z"></path>
+                </svg>
+            </div>
+            <div class="brand">
+                <svg width="36" height="36" viewBox="0 0 32 32" fill="currentColor" style="color: #dbdbde;">
+                    <path d="M24.997 14.5c0 0 0 0-0 0-0.828 0-1.5-0.671-1.5-1.5s0.671-1.5 1.5-1.5c0.828 0 1.5 0.671 1.5 1.5 0 0 0 0 0 0v0c0 0.828-0.671 1.5-1.5 1.5v0zM20.499 17.5c0 0 0 0-0 0-0.828 0-1.5-0.671-1.5-1.5s0.671-1.5 1.5-1.5c0.828 0 1.5 0.671 1.5 1.5 0 0 0 0 0 0v0c-0 0.828-0.671 1.5-1.5 1.5v0zM11.501 14.5h-2.999v2.999h-1.5v-2.999h-2.999v-1.5h2.999v-2.999h1.5v2.999h2.999zM30.996 17.5v-7.498l-7.498-4.499-7.498 4.499-7.498-4.499-7.498 4.499v7.498l14.996 8.997z"></path>
+                </svg>
+            </div>
+
+            <div class="brand">
+                <svg width="36" height="36" viewBox="-1.5 0 20 20" fill="currentColor" style="color: #dbdbde;">
+                    <g fill="currentColor">
+                        <path d="M57.5708873,7282.19296 C58.2999598,7281.34797 58.7914012,7280.17098 58.6569121,7279 C57.6062792,7279.04 56.3352055,7279.67099 55.5818643,7280.51498 C54.905374,7281.26397 54.3148354,7282.46095 54.4735932,7283.60894 C55.6455696,7283.69593 56.8418148,7283.03894 57.5708873,7282.19296 M60.1989864,7289.62485 C60.2283111,7292.65181 62.9696641,7293.65879 63,7293.67179 C62.9777537,7293.74279 62.562152,7295.10677 61.5560117,7296.51675 C60.6853718,7297.73474 59.7823735,7298.94772 58.3596204,7298.97372 C56.9621472,7298.99872 56.5121648,7298.17973 54.9134635,7298.17973 C53.3157735,7298.17973 52.8162425,7298.94772 51.4935978,7298.99872 C50.1203933,7299.04772 49.0738052,7297.68074 48.197098,7296.46676 C46.4032359,7293.98379 45.0330649,7289.44985 46.8734421,7286.3899 C47.7875635,7284.87092 49.4206455,7283.90793 51.1942837,7283.88393 C52.5422083,7283.85893 53.8153044,7284.75292 54.6394294,7284.75292 C55.4635543,7284.75292 57.0106846,7283.67793 58.6366882,7283.83593 C59.3172232,7283.86293 61.2283842,7284.09893 62.4549652,7285.8199 C62.355868,7285.8789 60.1747177,7287.09489 60.1989864,7289.62485" transform="translate(-56.000000, -7279.000000)"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="brand">
+                <svg width="36" height="36" viewBox="0 0 16 16" fill="currentColor" style="color: #dbdbde;">
+                    <path fill="currentColor" d="M1 1h6.5v6.5H1V1z"></path>
+                    <path fill="currentColor" d="M8.5 1H15v6.5H8.5V1z"></path>
+                    <path fill="currentColor" d="M1 8.5h6.5V15H1V8.5z"></path>
+                    <path fill="currentColor" d="M8.5 8.5H15V15H8.5V8.5z"></path>
+                </svg>
+            </div>
+            <div class="brand">
+                <svg width="36" height="36" viewBox="0 0 32 32" fill="currentColor" style="color: #dbdbde;">
+                    <path d="M30.996 2.724h-11.102l11.102 26.552zM12.106 2.724h-11.102v26.552zM18.457 29.276l-2.112-5.35h-5.191l4.864-11.427 7.075 16.776z"></path>
+                </svg>
+            </div>
+            <div class="brand">
+                <svg width="36" height="36" viewBox="0 0 32 32" fill="currentColor" style="color: #dbdbde;">
+                    <path d="M12.932 20.459v-8.917l7.839 4.459zM30.368 8.735c-0.354-1.301-1.354-2.307-2.625-2.663l-0.027-0.006c-3.193-0.406-6.886-0.638-10.634-0.638-0.381 0-0.761 0.002-1.14 0.007l0.058-0.001c-0.322-0.004-0.701-0.007-1.082-0.007-3.748 0-7.443 0.232-11.070 0.681l0.434-0.044c-1.297 0.363-2.297 1.368-2.644 2.643l-0.006 0.026c-0.4 2.109-0.628 4.536-0.628 7.016 0 0.088 0 0.176 0.001 0.263l-0-0.014c-0 0.074-0.001 0.162-0.001 0.25 0 2.48 0.229 4.906 0.666 7.259l-0.038-0.244c0.354 1.301 1.354 2.307 2.625 2.663l0.027 0.006c3.193 0.406 6.886 0.638 10.634 0.638 0.38 0 0.76-0.002 1.14-0.007l-0.058 0.001c0.322 0.004 0.702 0.007 1.082 0.007 3.749 0 7.443-0.232 11.070-0.681l-0.434 0.044c1.298-0.362 2.298-1.368 2.646-2.643l0.006-0.026c0.399-2.109 0.627-4.536 0.627-7.015 0-0.088-0-0.176-0.001-0.263l0 0.013c0-0.074 0.001-0.162 0.001-0.25 0-2.48-0.229-4.906-0.666-7.259l0.038 0.244z"></path>
+                </svg>
+            </div>
+            <div class="brand">
+                <svg width="36" height="36" viewBox="0 0 32 32" fill="currentColor" style="color: #dbdbde;">
+                    <path d="M20.386 16.8c0.011-0 0.023-0 0.035-0 0.231 0 0.456 0.026 0.672 0.077l-0.020-0.004-0.016 0.147c-0.068 0.581-0.495 1.046-1.051 1.17l-0.009 0.002c-0.038 0.008-0.082 0.013-0.127 0.013-0.306 0-0.562-0.211-0.632-0.495l-0.001-0.004c-0.004-0.027-0.006-0.059-0.006-0.091 0-0.16 0.056-0.307 0.15-0.423l-0.001 0.001c0.184-0.214 0.448-0.354 0.745-0.375l0.003-0c0.076-0.010 0.166-0.017 0.256-0.017h0.001zM28.754 15.478c0.317 0 0.509 0.285 0.509 0.876 0 0.858-0.345 1.563-0.781 1.563-0.327 0-0.519-0.295-0.519-0.877 0-0.867 0.355-1.562 0.791-1.562zM7.974 15.478c0.319 0 0.51 0.285 0.51 0.876 0 0.858-0.345 1.563-0.782 1.563-0.326 0-0.517-0.295-0.517-0.877 0-0.867 0.354-1.562 0.79-1.562zM1.74 14.319c-0.062 0.487-0.127 0.972-0.219 1.412 0.41-0.010 0.774-0.020 1.763-0.020l-2.262 2.449-0.019 0.878c0.555-0.037 1.246-0.049 2.037-0.049 0.707 0 1.417 0.010 1.871 0.049 0.081-0.572 0.162-0.953 0.262-1.421-0.344 0.019-0.943 0.029-1.889 0.029l2.262-2.461 0.029-0.867c-0.546 0.029-1.037 0.037-1.899 0.037-0.936 0-1.218-0.009-1.936-0.037zM8.146 14.206c-1.454 0.078-2.603 1.276-2.603 2.743 0 0.052 0.001 0.103 0.004 0.154l-0-0.007c-0.006 0.055-0.009 0.118-0.009 0.182 0 1.054 0.854 1.908 1.908 1.908 0.039 0 0.077-0.001 0.115-0.003l-0.005 0c1.454-0.075 2.604-1.273 2.604-2.738 0-0.056-0.002-0.112-0.005-0.167l0 0.008c0.006-0.056 0.009-0.12 0.009-0.186 0-1.047-0.849-1.896-1.896-1.896-0.043 0-0.085 0.001-0.127 0.004l0.006-0zM14.244 14.196c-0.875 0.145-1.584 0.736-1.894 1.528l-0.006 0.017c0.059-0.288 0.093-0.618 0.093-0.957 0-0.19-0.011-0.378-0.032-0.563l0.002 0.023c-0.475 0.084-1.030 0.139-1.595 0.152l-0.013 0c0.003 0.081 0.004 0.177 0.004 0.273 0 0.452-0.035 0.895-0.102 1.328l0.006-0.048-0.209 1.431c-0.082 0.562-0.172 1.211-0.264 1.621h1.691c0.009-0.249 0.072-0.639 0.117-0.982l0.145-0.982c0.119-0.639 0.627-1.392 1.018-1.392 0.227 0 0.219 0.22 0.155 0.63l-0.164 1.106c-0.082 0.562-0.172 1.211-0.264 1.621h1.708c0.010-0.249 0.064-0.64 0.11-0.982l0.145-0.982c0.117-0.64 0.627-1.392 1.017-1.392 0.227 0 0.219 0.21 0.182 0.495l-0.409 2.862h1.56l0.547-3.26c0.119-0.811 0.055-1.545-0.845-1.545-0.85 0.137-1.542 0.701-1.856 1.461l-0.006 0.016c0.109-0.762 0.045-1.477-0.846-1.477zM28.961 14.144c-1.473 0.079-2.637 1.292-2.637 2.777 0 0.053 0.001 0.105 0.004 0.157l-0-0.007c-0.006 0.056-0.009 0.121-0.009 0.186 0 1.067 0.865 1.933 1.933 1.933 0.039 0 0.078-0.001 0.116-0.003l-0.005 0c1.473-0.077 2.638-1.29 2.638-2.775 0-0.057-0.002-0.113-0.005-0.169l0 0.008c0.006-0.056 0.009-0.122 0.009-0.188 0-1.061-0.86-1.921-1.921-1.921-0.043 0-0.086 0.001-0.128 0.004l0.006-0zM20.794 14.066c-0.162 0.003-0.318 0.015-0.472 0.035l0.021-0.002c-0.628 0.072-1.197 0.264-1.706 0.551l0.022-0.012 0.325 0.986c0.353-0.2 0.765-0.344 1.204-0.405l0.018-0.002c0.672-0.082 0.946 0.125 0.987 0.469 0.005 0.046 0.008 0.1 0.008 0.155 0 0.073-0.005 0.144-0.015 0.214l0.001-0.008-0.017 0.070c-0.248-0.051-0.533-0.080-0.826-0.080-0.192 0-0.382 0.013-0.567 0.037l0.022-0.002c-0.602 0.046-1.131 0.326-1.502 0.747l-0.002 0.002c-0.196 0.268-0.313 0.605-0.313 0.969 0 0.114 0.012 0.226 0.034 0.334l-0.002-0.011c0.101 0.568 0.59 0.993 1.179 0.993 0.113 0 0.223-0.016 0.327-0.045l-0.008 0.002c0.557-0.061 1.035-0.355 1.341-0.782l0.004-0.006c-0.006 0.14-0.019 0.271-0.040 0.399l0.003-0.019c-0.022 0.138-0.054 0.26-0.095 0.378l0.005-0.015 1.555 0.001q-0.012-0.228-0.001-0.456 0.068-0.86 0.309-2.563c0.014-0.108 0.022-0.232 0.022-0.359 0-0.134-0.009-0.265-0.026-0.394l0.002 0.015c-0.1-0.805-0.785-1.211-1.794-1.197zM25.516 12.813l-1.572 0.591-0.209 0.887-0.557 0.026-0.144 1.222h0.51l-0.264 1.887c-0.164 1.173 0.045 1.726 1.081 1.726 0.521-0.009 1.008-0.145 1.434-0.379l-0.016 0.008 0.181-1.125c-0.224 0.122-0.485 0.207-0.763 0.237l-0.009 0.001c-0.309 0-0.345-0.162-0.281-0.61l0.236-1.745h1.053c0.038-0.257 0.164-1.096 0.2-1.25h-1.081z"></path>
+                </svg>
+            </div>
+            <div class="brand">
+                <svg width="36" height="36" viewBox="0 0 32 32" fill="currentColor" style="color: #dbdbde;">
+                    <path d="M19.283 17.4c-0.367 0.374-0.879 0.606-1.444 0.606-1.117 0-2.023-0.906-2.023-2.023s0.906-2.023 2.023-2.023c0.929 0 1.712 0.626 1.949 1.479l0.003 0.014c0.045 0.159 0.071 0.341 0.071 0.53 0 0.552-0.221 1.052-0.579 1.417l0-0zM15.471 13.586c-0.648 0.615-1.052 1.483-1.052 2.446 0 1.861 1.509 3.37 3.37 3.37s3.37-1.509 3.37-3.37c0-1.54-1.033-2.838-2.444-3.241l-0.024-0.006c-0.27-0.078-0.581-0.123-0.902-0.123-0.899 0-1.716 0.352-2.32 0.925l0.002-0.001zM28.296 12.601c-0.802 0.001-1.522 0.352-2.016 0.909l-0.002 0.003c-0.496-0.562-1.219-0.915-2.023-0.915-0.563 0-1.086 0.173-1.519 0.468l0.009-0.006c-0.316-0.278-0.73-0.451-1.184-0.462l-0.002-0v6.742l0.337-0.016c0.544-0.014 0.981-0.451 0.995-0.993l0-0.001 0.016-0.337v-2.361l0.017-0.337c0-0.001 0-0.002 0-0.003 0-0.245 0.061-0.477 0.169-0.679l-0.004 0.008c0.238-0.405 0.671-0.672 1.166-0.672s0.928 0.267 1.162 0.664l0.003 0.006c0.103 0.196 0.164 0.428 0.165 0.675v0l0.017 0.339v2.361l0.016 0.336c0.022 0.54 0.454 0.972 0.991 0.995l0.002 0 0.337 0.016v-3.708l0.015-0.337c0-0.001 0-0.002 0-0.003 0-0.247 0.062-0.48 0.171-0.683l-0.004 0.008c0.238-0.403 0.67-0.669 1.165-0.669 0.496 0 0.929 0.268 1.164 0.666l0.003 0.006c0.102 0.195 0.162 0.427 0.162 0.673 0 0.001 0 0.001 0 0.002v-0l0.019 0.337v2.361l0.016 0.336c0.020 0.541 0.454 0.975 0.993 0.995l0.002 0 0.337 0.016v-4.045c-0.001-1.488-1.208-2.694-2.697-2.694-0.001 0-0.002 0-0.003 0h0zM12.206 17.4c-0.37 0.393-0.894 0.638-1.475 0.638-1.117 0-2.023-0.906-2.023-2.023s0.906-2.023 2.023-2.023c0.924 0 1.703 0.619 1.945 1.465l0.004 0.014c0.047 0.163 0.075 0.351 0.075 0.544 0 0.536-0.209 1.024-0.549 1.386l0.001-0.001zM10.78 12.6h-0.005c-1.86 0.001-3.367 1.509-3.367 3.368s1.508 3.368 3.368 3.368 3.368-1.508 3.368-3.368c0-1.86-1.507-3.367-3.366-3.368h-0zM6.734 18.008l-0.337-0.015h-3.035l4.044-4.045-0.016-0.337c-0.013-0.544-0.451-0.982-0.994-0.995l-0.001-0-0.337-0.016h-5.052l0.018 0.337c0.026 0.538 0.455 0.967 0.99 0.995l0.002 0 0.337 0.016h3.037l-4.049 4.045 0.017 0.336c0.019 0.541 0.453 0.975 0.992 0.995l0.002 0 0.337 0.016h5.056l-0.018-0.337c-0.024-0.539-0.455-0.969-0.991-0.993l-0.002-0z"></path>
+                </svg>
+            </div>
+            <div class="brand">
+                <svg width="36" height="36" viewBox="0 0 32 32" fill="currentColor" style="color: #dbdbde;">
+                    <path d="M24.997 14.5c0 0 0 0-0 0-0.828 0-1.5-0.671-1.5-1.5s0.671-1.5 1.5-1.5c0.828 0 1.5 0.671 1.5 1.5 0 0 0 0 0 0v0c0 0.828-0.671 1.5-1.5 1.5v0zM20.499 17.5c0 0 0 0-0 0-0.828 0-1.5-0.671-1.5-1.5s0.671-1.5 1.5-1.5c0.828 0 1.5 0.671 1.5 1.5 0 0 0 0 0 0v0c-0 0.828-0.671 1.5-1.5 1.5v0zM11.501 14.5h-2.999v2.999h-1.5v-2.999h-2.999v-1.5h2.999v-2.999h1.5v2.999h2.999zM30.996 17.5v-7.498l-7.498-4.499-7.498 4.499-7.498-4.499-7.498 4.499v7.498l14.996 8.997z"></path>
+                </svg>
+            </div>
         </div>
     </div>
 
-    <div class="card">
-        <div class="overlay">
-            <h4>Portfolio Design</h4>
+    <footer class="footer">
+        <a href="#" class="footlogo">dribbble</a>
+        <div class="links">
+            <a href="#">For designers</a>
+            <a href="#">Hire talent</a>
+            <a href="#">Inspiration</a>
+            <a href="#">Advertising</a>
+            <a href="#">Blog</a>
+            <a href="#">About</a>
+            <a href="#">Careers</a>
+            <a href="#">Support</a>
+            <a href="#">Jobs</a>
+            <a href="#">Designers</a>
+            <a href="#">Freelancers</a>
+            <a href="#">Tags</a>
+            <a href="#">Places</a>
+            <a href="#">Resources</a>
         </div>
-    </div>
-
-    <div class="card">
-        <div class="overlay">
-            <h4>Ecommerce Layout</h4>
+        <div class="copyright">
+            © 2026 Dribbble. Designed with clean, semantic markup.
         </div>
-    </div>
+    </footer>
 
-    <div class="card">
-        <div class="overlay">
-            <h4>Finance App</h4>
-        </div>
-    </div>
-
-    <div class="card tall">
-        <div class="overlay">
-            <h4>Agency Website</h4>
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="overlay">
-            <h4>Product Card</h4>
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="overlay">
-            <h4>Landing Page</h4>
-        </div>
-    </div>
-
-</section>
-
-<section class="brands">
-
-    <div class="track">
-
-        <div class="item">Adobe</div>
-        <div class="item">Figma</div>
-        <div class="item">Spotify</div>
-        <div class="item">Dropbox</div>
-        <div class="item">Airbnb</div>
-        <div class="item">Slack</div>
-
-        <div class="item">Adobe</div>
-        <div class="item">Figma</div>
-        <div class="item">Spotify</div>
-        <div class="item">Dropbox</div>
-        <div class="item">Airbnb</div>
-        <div class="item">Slack</div>
-
-    </div>
-
-</section>
-
-<section class="cta">
-
-    <h2>
-        Find your next designer today
-    </h2>
-
-    <p>
-        The world's leading brands use Dribbble to hire
-        creative talent and build amazing products.
-    </p>
-
-    <div class="btns">
-        <button class="hire">
-            Get Started
-        </button>
-
-        <button class="talk">
-            Learn More
-        </button>
-    </div>
-
-</section>
-
-<footer class="foot">
-
-    <div class="col">
-        <h3>Dribbble</h3>
-        <p>Design inspiration from the world's best creatives.</p>
-    </div>
-
-    <div class="col">
-        <a href="#">For Designers</a>
-        <a href="#">Hire Talent</a>
-        <a href="#">Advertising</a>
-        <a href="#">Blog</a>
-    </div>
-
-    <div class="col">
-        <a href="#">Careers</a>
-        <a href="#">Support</a>
-        <a href="#">Terms</a>
-        <a href="#">Privacy</a>
-    </div>
-
-</footer>
-
-<div class="copy">
-
-    <p>© 2026 Dribbble Clone</p>
-
-    <div class="links">
-        <a href="#">Jobs</a>
-        <a href="#">Designers</a>
-        <a href="#">Tags</a>
-        <a href="#">Places</a>
-    </div>
-
-</div>
+    <a href="#" class="popup">
+        Sign up to continue
+    </a>
 
 </body>
 </html>
